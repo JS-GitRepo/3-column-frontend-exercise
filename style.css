@@ -1,0 +1,93 @@
+/* Resets */
+body,
+p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* General / Non-Specific */
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+
+
+/* Specifics */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    padding: 20px;
+}
+
+.container a {
+    padding: 10px 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px; 
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container a:hover {
+    border: 2px solid white;
+    color: white;
+}
+
+.sedans-container {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.sedans-container a {
+    color:hsl(31, 77%, 52%);
+}
+
+.sedans-container a:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-container a {
+    color:hsl(184, 100%, 22%);
+}
+
+.suvs-container a:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-container a {
+    color:hsl(179, 100%, 13%);
+}
+
+.luxury-container a:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.type {
+    font-size: 36px;
+    font-family: "Big Shoulders Display", cursive;
+    color: white;
+    margin: 20px 0px;
+}
+
+/* Media Queries / Scaling */
+@media only screen and (min-width: 1440px) {
+    main {
+        flex-direction: row;
+    }
+}
